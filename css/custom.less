@@ -1,0 +1,96 @@
+header {
+  font-size: 13px;
+  background-color: #2D3340;
+  color: #a0a0a0;
+  padding: 10px;
+  h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+  }
+}
+
+
+table th,
+table td {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.top-filters {
+  padding: 5px;
+  .dropdown {
+    display: inline-block;
+  }
+  .search {
+    width: 200px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+
+thead {
+  background-color: #E8E9EF;
+}
+
+.table>thead>tr>th {
+  border-bottom: none;
+}
+
+tr.filter-row {
+  background: #E8E9EF;
+}
+
+th span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 9px;
+}
+
+th.filter-button {
+  cursor: pointer;
+}
+
+th i.fa-trash-o {
+  font-size: 16px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+th .fa-filter {
+  padding: 3px;
+}
+
+td .fa-star {
+  font-size: 12px;
+  padding: 3px;
+  cursor: pointer;
+  &.inactive {
+    color: #ddd;
+  }
+  &.active {
+    color: gold;
+  }
+}
+
+.filter-dd {
+  position: relative;
+  width: 100%;
+  padding: 7px;
+  background-color: #fff;
+  text-align: right;
+  i {
+    color: #999;
+  }
+  div.filter-dd-detail {
+    position: absolute;
+    top: 27px;
+    left: -2px;
+    text-align: left;
+    padding: 7px;
+    background: #fff;
+    border: 2px solid #ccc;
+    width: 200px;
+    height: 200px;
+  }
+}
