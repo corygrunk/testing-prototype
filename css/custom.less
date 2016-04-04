@@ -2,11 +2,50 @@ header {
   font-size: 13px;
   background-color: #2D3340;
   color: #a0a0a0;
-  padding: 10px;
+  padding: 15px;
   h1 {
-    margin: 0;
+    margin: 0 20px 0 0;
+    display: inline-block;
     color: #fff;
     font-size: 18px;
+  }
+  a {
+    display: inline-block;
+    padding: 0 20px;
+    color: #A8A8A8;
+    &.active {
+      color: #fff;
+    }
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  .coach {
+    float: right;
+    .fa-phone {
+      display: inline-block;
+      color: #fff;
+      padding-right: 20px;
+    }
+    .fa-circle {
+      margin-top: -2px;
+      display: inline-block;
+      color: lighten(green, 10%);
+      padding-right: 10px;
+    }
+    .avatar {
+      margin-top: -5px;
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    .fa-chevron-down {
+      display: inline-block;
+      color: #eee;
+      font-size: 14px;
+    }
   }
 }
 
@@ -41,6 +80,11 @@ tr.filter-row {
   background: #E8E9EF;
 }
 
+.table>tbody>tr:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
 th span {
   display: inline-block;
   vertical-align: middle;
@@ -65,9 +109,7 @@ td .fa-star {
   font-size: 12px;
   padding: 3px;
   cursor: pointer;
-  &.inactive {
-    color: #ddd;
-  }
+  color: #ddd;
   &.active {
     color: gold;
   }
@@ -85,12 +127,14 @@ td .fa-star {
   div.filter-dd-detail {
     position: absolute;
     top: 27px;
-    left: -2px;
+    left: 0;
     text-align: left;
     padding: 7px;
     background: #fff;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     width: 200px;
-    height: 200px;
+    .form-control {
+      margin-bottom: 10px;
+    }
   }
 }

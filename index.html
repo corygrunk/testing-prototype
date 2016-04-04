@@ -11,6 +11,16 @@
   <body>
     <header>
       <h1>uCoach</h1>
+      <a href="#" class="active">Roster</a>
+      <a href="#">Messages</a>
+      <a href="#">1:1 Sessions</a>
+      <a href="#">Modules</a>
+      <div class="coach">
+        <i class="fa fa-phone"></i>
+        <i class="fa fa-circle"></i>
+        <img src="https://chegg.insidetrack.com/public/img/coaches/png/theresa_park.png" class="avatar">
+        <i class="fa fa-chevron-down"></i>
+      </div>
     </header>
     <div class="top-filters">
       <div class="dropdown">
@@ -60,7 +70,12 @@
             <div class="filter-dd">
               <i class="fa fa-chevron-down"></i>
               <div class="filter-dd-detail">
-                <p>Stuff goes here</p>
+                <form>
+                  <label>Type a name</label>
+                  <input type="text" class="form-control">
+                  <div type="submit" class="btn btn-primary apply">Apply</div>
+                  <div type="submit" class="btn btn-link clear">Clear</div>
+                </form>
               </div>
             </div>
           </th>
@@ -147,7 +162,7 @@
       </thead>
       <tbody>
         <tr>
-          <td><i class="fa fa-star inactive"></i></td>
+          <td><i class="fa fa-star"></i></td>
           <td>Erin Anderson</td>
           <td>4/12/2016</td>
           <td>1:1 Session</td>
@@ -189,7 +204,7 @@
           <td>1/12/2016</td>
         </tr>
         <tr>
-          <td><i class="fa fa-star inactive"></i></td>
+          <td><i class="fa fa-star"></i></td>
           <td>Erin Anderson</td>
           <td>4/12/2016</td>
           <td>1:1 Session</td>
@@ -203,7 +218,7 @@
           <td>1/12/2016</td>
         </tr>
         <tr>
-          <td><i class="fa fa-star inactive"></i></td>
+          <td><i class="fa fa-star"></i></td>
           <td>Erin Anderson</td>
           <td>4/12/2016</td>
           <td>1:1 Session</td>
@@ -217,7 +232,7 @@
           <td>1/12/2016</td>
         </tr>
         <tr>
-          <td><i class="fa fa-star inactive"></i></td>
+          <td><i class="fa fa-star"></i></td>
           <td>Erin Anderson</td>
           <td>4/12/2016</td>
           <td>1:1 Session</td>
@@ -242,18 +257,34 @@
         $(".group-message").hide();
         $(".filter-row").hide();
 
+
         $("th.filter-button").click(function (e) {
           $(".filter-row").toggle();
           $(".group-message").toggle();
+          $(".filter-dd-detail").hide();
         });
         $(".fa-trash-o").click(function (e) {
           $(".filter-row").hide();
           $(".group-message").hide();
+          $(".filter-dd-detail").hide();
         });
 
         $(".filter-dd-detail").hide();
         $(".filter-dd").click(function (e) {
-          $(this).find(".filter-dd-detail").toggle();
+          $(".filter-dd-detail").hide();
+          $(this).find(".filter-dd-detail").show();
+        });
+
+        $(document).on('click', '.apply', function() {
+          $(".filter-dd-detail").hide();
+        });
+
+        $(document).on('click', '.clear', function() {
+          $(".filter-dd-detail").hide();
+        });
+
+        $('.table td .fa-star').click(function () {
+            $(this).toggleClass("active");
         });
 
       });
