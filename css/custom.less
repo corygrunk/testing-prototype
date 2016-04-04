@@ -121,20 +121,161 @@ td .fa-star {
   padding: 7px;
   background-color: #fff;
   text-align: right;
+  span {
+    font-size: 12px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
   i {
     color: #999;
   }
   div.filter-dd-detail {
     position: absolute;
-    top: 27px;
+    top: 29px;
     left: 0;
     text-align: left;
     padding: 7px;
     background: #fff;
     border: 1px solid #ccc;
     width: 200px;
-    .form-control {
+    &.right {
+      right: 0;
+      left: auto;
+    }
+    .form-control,
+    .dropdown {
       margin-bottom: 10px;
     }
+    .checkbox {
+      input {
+        margin-top: 1px;
+      }
+      label {
+        display: block;
+      }
+    }
+  }
+}
+
+.messages-sidebar {
+  position: absolute;
+  top: 95px;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  .to-entry {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    span.label {
+      display: inline-block;
+      margin-bottom: 5px;
+      padding-top: 4px;
+      font-size: 12px;
+    }
+    &.active {
+      background-color: #eaeaea;
+    }
+    div {
+      font-size: 12px;
+    }
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 160%;
+      strong {
+        text-transform: uppercase;
+        color: #000;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.message-content {
+  position: absolute;
+  top: 95px;
+  right: 0;
+  bottom: 100px;
+  left: 300px;
+  border-top: 1px solid #ccc;
+  .message-entry {
+    position: relative;
+    .divider {
+      text-align: center;
+      background-color: #fff;
+      width: 100px;
+      margin: 20px auto;
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        margin-top: 10px;
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+      }
+    }
+    small {
+      padding: 15px;
+    }
+    p {
+      padding: 0 15px 15px 15px;
+    }
+    &.empty {
+      text-align: center;
+      padding: 200px 0 0 0;
+      small {
+        display: block;
+        font-size: 18px;
+        padding-bottom: 15px;
+      }
+      p {
+        margin: 0;
+        color: #999;
+      }
+    }
+  }
+}
+
+.message-sender {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 300px;
+  height: 120px;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  .input-box {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    i.fa-paperclip {
+      transform: rotate(-136deg);
+      font-size: 18px;
+      color: #999;
+    }
+    div {
+      margin-top: -8px;
+      margin-right: -8px;
+    }
+  }
+}
+
+
+.screenshot {
+  text-align: center;
+  position: relative;
+  a {
+    position: absolute;
+    height: 50px;
+    width: 157px;
+    top: 138px;
+    right: 404px;
   }
 }

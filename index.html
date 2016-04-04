@@ -11,14 +11,14 @@
   <body>
     <header>
       <h1>uCoach</h1>
-      <a href="#" class="active">Roster</a>
-      <a href="#">Messages</a>
+      <a href="index.html" class="active">Roster</a>
+      <a href="messages-indv.html">Messages</a>
       <a href="#">1:1 Sessions</a>
       <a href="#">Modules</a>
       <div class="coach">
         <i class="fa fa-phone"></i>
         <i class="fa fa-circle"></i>
-        <img src="https://chegg.insidetrack.com/public/img/coaches/png/theresa_park.png" class="avatar">
+        <img src="img/coach-avatar.png" class="avatar">
         <i class="fa fa-chevron-down"></i>
       </div>
     </header>
@@ -46,7 +46,7 @@
       <div class="search">
         <input type="text" class="form-control" placeholder="Search">
       </div>
-      <div class="group-message btn btn-primary pull-right">Send message to this group</div>
+      <a href="messages.html" class="group-message btn btn-primary pull-right">Send message to this group</a>
     </div>
     <table class="table">
       <thead>
@@ -83,7 +83,32 @@
             <div class="filter-dd">
               <i class="fa fa-chevron-down"></i>
               <div class="filter-dd-detail">
-                <p>Stuff goes here</p>
+                <form>
+                  <label>Next coach action date</label>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Is
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Is before</a></li>
+                      <li><a href="#">Is after</a></li>
+                      <li><a href="#">Is in the range of</a></li>
+                    </ul>
+                  </div>
+                  <label>Date</label>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      MM/DD/YYYY
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Date selector goes here</a></li>
+                    </ul>
+                  </div>
+                  <div type="submit" class="btn btn-primary apply">Apply</div>
+                  <div type="submit" class="btn btn-link clear">Clear</div>
+                </form>
               </div>
             </div>
           </th>
@@ -91,7 +116,19 @@
             <div class="filter-dd">
               <i class="fa fa-chevron-down"></i>
               <div class="filter-dd-detail">
-                <p>Stuff goes here</p>
+                <form>
+                  <label>Next coach action date</label>
+                  <div class="checkbox">
+                    <label><input type="checkbox" checked> App Message</label>
+                    <label><input type="checkbox" checked> SMS Message</label>
+                    <label><input type="checkbox" checked> Phone Contact</label>
+                    <label><input type="checkbox" checked> Email</label>
+                    <label><input type="checkbox" checked> 1:1 Session</label>
+                    <label><input type="checkbox" checked> App Usage</label>
+                  </div>
+                  <div type="submit" class="btn btn-primary apply">Apply</div>
+                  <div type="submit" class="btn btn-link clear">Clear</div>
+                </form>
               </div>
             </div>
           </th>
@@ -99,7 +136,32 @@
             <div class="filter-dd">
               <i class="fa fa-chevron-down"></i>
               <div class="filter-dd-detail">
-                <p>Stuff goes here</p>
+                <form>
+                  <label>Last student action date</label>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Is
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Is before</a></li>
+                      <li><a href="#">Is after</a></li>
+                      <li><a href="#">Is in the range of</a></li>
+                    </ul>
+                  </div>
+                  <label>Date</label>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      MM/DD/YYYY
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Date selector goes here</a></li>
+                    </ul>
+                  </div>
+                  <div type="submit" class="btn btn-primary apply">Apply</div>
+                  <div type="submit" class="btn btn-link clear">Clear</div>
+                </form>
               </div>
             </div>
           </th>
@@ -107,7 +169,19 @@
             <div class="filter-dd">
               <i class="fa fa-chevron-down"></i>
               <div class="filter-dd-detail">
-                <p>Stuff goes here</p>
+                <form>
+                  <label>Last student action</label>
+                  <div class="checkbox">
+                    <label><input type="checkbox" checked> App Message</label>
+                    <label><input type="checkbox" checked> SMS Message</label>
+                    <label><input type="checkbox" checked> Phone Contact</label>
+                    <label><input type="checkbox" checked> Email</label>
+                    <label><input type="checkbox" checked> 1:1 Session</label>
+                    <label><input type="checkbox" checked> App Usage</label>
+                  </div>
+                  <div type="submit" class="btn btn-primary apply">Apply</div>
+                  <div type="submit" class="btn btn-link clear">Clear</div>
+                </form>
               </div>
             </div>
           </th>
@@ -115,7 +189,12 @@
             <div class="filter-dd">
               <i class="fa fa-chevron-down"></i>
               <div class="filter-dd-detail">
-                <p>Stuff goes here</p>
+                <form>
+                  <label>Type student detail</label>
+                  <input type="text" class="form-control">
+                  <div type="submit" class="btn btn-primary apply">Apply</div>
+                  <div type="submit" class="btn btn-link clear">Clear</div>
+                </form>
               </div>
             </div>
           </th>
@@ -123,7 +202,32 @@
             <div class="filter-dd">
               <i class="fa fa-chevron-down"></i>
               <div class="filter-dd-detail">
-                <p>Stuff goes here</p>
+                <form>
+                  <label>Last 1:1 session date</label>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Is
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Is before</a></li>
+                      <li><a href="#">Is after</a></li>
+                      <li><a href="#">Is in the range of</a></li>
+                    </ul>
+                  </div>
+                  <label>Date</label>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      MM/DD/YYYY
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Date selector goes here</a></li>
+                    </ul>
+                  </div>
+                  <div type="submit" class="btn btn-primary apply">Apply</div>
+                  <div type="submit" class="btn btn-link clear">Clear</div>
+                </form>
               </div>
             </div>
           </th>
@@ -131,7 +235,12 @@
             <div class="filter-dd">
               <i class="fa fa-chevron-down"></i>
               <div class="filter-dd-detail">
-                <p>Stuff goes here</p>
+                <form>
+                  <label>Type sticky note</label>
+                  <input type="text" class="form-control">
+                  <div type="submit" class="btn btn-primary apply">Apply</div>
+                  <div type="submit" class="btn btn-link clear">Clear</div>
+                </form>
               </div>
             </div>
           </th>
@@ -139,23 +248,71 @@
             <div class="filter-dd">
               <i class="fa fa-chevron-down"></i>
               <div class="filter-dd-detail">
-                <p>Stuff goes here</p>
+                <form>
+                  <label>Cohort</label>
+                  <div class="checkbox">
+                    <label><input type="checkbox" checked> T1 Blue</label>
+                    <label><input type="checkbox" checked> T2 Blue</label>
+                    <label><input type="checkbox" checked> T3 Blue</label>
+                    <label><input type="checkbox" checked> T1 Green</label>
+                    <label><input type="checkbox" checked> T2 Green</label>
+                    <label><input type="checkbox" checked> T3 Green</label>
+                    <label><input type="checkbox" checked> T4 Green</label>
+                  </div>
+                  <div type="submit" class="btn btn-primary apply">Apply</div>
+                  <div type="submit" class="btn btn-link clear">Clear</div>
+                </form>
               </div>
             </div>
           </th>
           <th>
             <div class="filter-dd">
               <i class="fa fa-chevron-down"></i>
-              <div class="filter-dd-detail">
-                <p>Stuff goes here</p>
+              <div class="filter-dd-detail right">
+                <form>
+                  <label>Plan</label>
+                  <div class="checkbox">
+                    <label><input type="checkbox" checked> High Contact</label>
+                    <label><input type="checkbox" checked> Med Contact</label>
+                    <label><input type="checkbox" checked> Low Contact</label>
+                    <label><input type="checkbox" checked> Do Not Contact</label>
+                  </div>
+                  <div type="submit" class="btn btn-primary apply">Apply</div>
+                  <div type="submit" class="btn btn-link clear">Clear</div>
+                </form>
               </div>
             </div>
           </th>
           <th>
             <div class="filter-dd">
               <i class="fa fa-chevron-down"></i>
-              <div class="filter-dd-detail">
-                <p>Stuff goes here</p>
+              <div class="filter-dd-detail right">
+                <form>
+                  <label>Date student joined uCoach</label>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Is
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Is before</a></li>
+                      <li><a href="#">Is after</a></li>
+                      <li><a href="#">Is in the range of</a></li>
+                    </ul>
+                  </div>
+                  <label>Date</label>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      MM/DD/YYYY
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Date selector goes here</a></li>
+                    </ul>
+                  </div>
+                  <div type="submit" class="btn btn-primary apply">Apply</div>
+                  <div type="submit" class="btn btn-link clear">Clear</div>
+                </form>
               </div>
             </div>
           </th>
@@ -175,35 +332,105 @@
           <td>Med Contact</td>
           <td>1/12/2016</td>
         </tr>
+      <tr class="sort-away">
+          <td><i class="fa fa-star active"></i></td>
+          <td>Rodney Boners</td>
+          <td>4/15/2016</td>
+          <td>Message</td>
+          <td>3/13/2016</td>
+          <td>App Message</td>
+          <td>Good luck on this ...</td>
+          <td>3/12/2016</td>
+          <td></td>
+          <td>T1 Blue</td>
+          <td>Low Contact</td>
+          <td>1/13/2016</td>
+        </tr>
         <tr>
           <td><i class="fa fa-star active"></i></td>
-          <td>Erin Anderson</td>
+          <td>Elizabeth Bookings</td>
           <td>4/12/2016</td>
           <td>1:1 Session</td>
+          <td>3/15/2016</td>
+          <td>App Usage</td>
+          <td>Welcome Module</td>
+          <td>3/1/2016</td>
+          <td>Call in the afternoon.</td>
+          <td>T1 Green</td>
+          <td>Med Contact</td>
+          <td>1/15/2016</td>
+        </tr>
+        <tr class="sort-away">
+          <td><i class="fa fa-star"></i></td>
+          <td>Johnathon Calloway</td>
+          <td>4/2/2016</td>
+          <td>Message</td>
           <td>3/29/2016</td>
-          <td>SMS</td>
-          <td>Hi Coach. I'm really...</td>
+          <td>Group Message</td>
+          <td>Remember to meet ...</td>
           <td>3/16/2016</td>
-          <td>Erin is juggling two jobs and ...</td>
+          <td></td>
+          <td>T1 Blue</td>
+          <td>Low Contact</td>
+          <td>1/12/2016</td>
+        </tr>
+        <tr class="sort-away">
+          <td><i class="fa fa-star"></i></td>
+          <td>Manuel Domingo</td>
+          <td>4/16/2016</td>
+          <td>Message</td>
+          <td>3/29/2016</td>
+          <td>Group Message</td>
+          <td>Remember to meet ...</td>
+          <td>3/10/2016</td>
+          <td>Manual works Tuesdays.</td>
+          <td>T1 Green</td>
+          <td>Med Contact</td>
+          <td>1/12/2016</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-star"></i></td>
+          <td>Rachel Douglas</td>
+          <td>4/12/2016</td>
+          <td>1:1 Session</td>
+          <td>3/15/2016</td>
+          <td>1:1 Session</td>
+          <td>Met with Rachel ...</td>
+          <td>3/15/2016</td>
+          <td>Rachel works one job ...</td>
+          <td>T1 Blue</td>
+          <td>Med Contact</td>
+          <td>1/12/2016</td>
+        </tr>
+        <tr class="sort-away">
+          <td><i class="fa fa-star"></i></td>
+          <td>William Franzit</td>
+          <td>4/10/2016</td>
+          <td>Message</td>
+          <td>3/29/2016</td>
+          <td>Group Message</td>
+          <td>Remember to meet ...</td>
+          <td>3/10/2016</td>
+          <td></td>
           <td>T1 Blue</td>
           <td>Med Contact</td>
           <td>1/12/2016</td>
         </tr>
         <tr>
-          <td><i class="fa fa-star active"></i></td>
-          <td>Erin Anderson</td>
+          <td><i class="fa fa-star"></i></td>
+          <td>Rhonda Hollwell</td>
           <td>4/12/2016</td>
           <td>1:1 Session</td>
-          <td>3/29/2016</td>
-          <td>SMS</td>
-          <td>Hi Coach. I'm really...</td>
-          <td>3/16/2016</td>
-          <td>Erin is juggling two jobs and ...</td>
+          <td>3/15/2016</td>
+          <td>1:1 Session</td>
+          <td>Met with Rachel ...</td>
+          <td>3/15/2016</td>
+          <td>Rachel works one job ...</td>
           <td>T1 Blue</td>
           <td>Med Contact</td>
           <td>1/12/2016</td>
         </tr>
-        <tr>
+        <tr class="sort-away">
           <td><i class="fa fa-star"></i></td>
           <td>Erin Anderson</td>
           <td>4/12/2016</td>
@@ -217,37 +444,107 @@
           <td>Med Contact</td>
           <td>1/12/2016</td>
         </tr>
-        <tr>
+        <tr class="sort-away">
           <td><i class="fa fa-star"></i></td>
-          <td>Erin Anderson</td>
-          <td>4/12/2016</td>
+          <td>Rodney Boners</td>
+          <td>4/15/2016</td>
+          <td>Message</td>
+          <td>3/13/2016</td>
+          <td>App Message</td>
+          <td>Good luck on this ...</td>
+          <td>3/12/2016</td>
+          <td></td>
+          <td>T1 Blue</td>
+          <td>Low Contact</td>
+          <td>1/13/2016</td>
+        </tr>
+        <tr class="sort-away">
+          <td><i class="fa fa-star"></i></td>
+          <td>Elizabeth Bookings</td>
+          <td>4/01/2016</td>
           <td>1:1 Session</td>
+          <td>3/15/2016</td>
+          <td>App Usage</td>
+          <td>Welcome Module</td>
+          <td>3/1/2016</td>
+          <td>Call in the afternoon.</td>
+          <td>T1 Green</td>
+          <td>Med Contact</td>
+          <td>1/15/2016</td>
+        </tr>
+        <tr class="sort-away">
+          <td><i class="fa fa-star"></i></td>
+          <td>Johnathon Calloway</td>
+          <td>4/2/2016</td>
+          <td>Message</td>
           <td>3/29/2016</td>
-          <td>SMS</td>
-          <td>Hi Coach. I'm really...</td>
+          <td>Group Message</td>
+          <td>Remember to meet ...</td>
           <td>3/16/2016</td>
-          <td>Erin is juggling two jobs and ...</td>
+          <td></td>
+          <td>T1 Blue</td>
+          <td>Low Contact</td>
+          <td>1/12/2016</td>
+        </tr>
+        <tr class="sort-away">
+          <td><i class="fa fa-star"></i></td>
+          <td>Manuel Domingo</td>
+          <td>4/16/2016</td>
+          <td>Message</td>
+          <td>3/29/2016</td>
+          <td>Group Message</td>
+          <td>Remember to meet ...</td>
+          <td>3/10/2016</td>
+          <td>Manual works Tuesdays.</td>
+          <td>T1 Green</td>
+          <td>Med Contact</td>
+          <td>1/12/2016</td>
+        </tr>
+        <tr class="sort-away">
+          <td><i class="fa fa-star"></i></td>
+          <td>Rachel Douglas</td>
+          <td>4/15/2016</td>
+          <td>1:1 Session</td>
+          <td>3/15/2016</td>
+          <td>1:1 Session</td>
+          <td>Met with Rachel ...</td>
+          <td>3/15/2016</td>
+          <td>Rachel works one job ...</td>
           <td>T1 Blue</td>
           <td>Med Contact</td>
           <td>1/12/2016</td>
         </tr>
         <tr>
           <td><i class="fa fa-star"></i></td>
-          <td>Erin Anderson</td>
+          <td>William Franzit</td>
           <td>4/12/2016</td>
           <td>1:1 Session</td>
           <td>3/29/2016</td>
-          <td>SMS</td>
-          <td>Hi Coach. I'm really...</td>
-          <td>3/16/2016</td>
-          <td>Erin is juggling two jobs and ...</td>
+          <td>Group Message</td>
+          <td>Remember to meet ...</td>
+          <td>3/10/2016</td>
+          <td></td>
+          <td>T1 Blue</td>
+          <td>Med Contact</td>
+          <td>1/12/2016</td>
+        </tr>
+        <tr class="sort-away">
+          <td><i class="fa fa-star"></i></td>
+          <td>Rhonda Hollwell</td>
+          <td>4/15/2016</td>
+          <td>1:1 Session</td>
+          <td>3/15/2016</td>
+          <td>1:1 Session</td>
+          <td>Met with Rachel ...</td>
+          <td>3/15/2016</td>
+          <td>Rachel works one job ...</td>
           <td>T1 Blue</td>
           <td>Med Contact</td>
           <td>1/12/2016</td>
         </tr>
       </tbody>
     </table>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js"></script>
+    <script src="js/less.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script type="text/javascript">
@@ -257,6 +554,9 @@
         $(".group-message").hide();
         $(".filter-row").hide();
 
+        $(".table tbody tr").click(function (e) {
+          window.location.href = "profile.html";
+        });
 
         $("th.filter-button").click(function (e) {
           $(".filter-row").toggle();
@@ -267,20 +567,28 @@
           $(".filter-row").hide();
           $(".group-message").hide();
           $(".filter-dd-detail").hide();
+          $(".sort-away").show();
+          $(".group-message").text('Send message to this group');
         });
 
         $(".filter-dd-detail").hide();
         $(".filter-dd").click(function (e) {
           $(".filter-dd-detail").hide();
           $(this).find(".filter-dd-detail").show();
+          $(".group-message").text('Send message to this group');
         });
 
         $(document).on('click', '.apply', function() {
           $(".filter-dd-detail").hide();
+          $(".sort-away").hide();
+          $(".group-message").text('Send message to this group (5)');
+          // $("<span>Filtered</span>").prependTo($(this).parent().parent().parent());
         });
 
         $(document).on('click', '.clear', function() {
           $(".filter-dd-detail").hide();
+          $(".sort-away").show();
+          $(".group-message").text('Send message to this group');
         });
 
         $('.table td .fa-star').click(function () {
